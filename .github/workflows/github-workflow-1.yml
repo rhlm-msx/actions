@@ -5,4 +5,6 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
-      - run: neofetch
+      - run: echo "Running gh actions workflow"
+      - run: echo "${{ github.event }} called from event"
+      - run: echo "${{ runner.os }}"
